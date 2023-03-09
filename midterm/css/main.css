@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+}
+
+.wrapper{
+background-color: hsl(0, 0%, 90%);
+width: 800px;
+margin: auto;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    background-image: url(../images/raw0019.jpeg);
+    background-position: center; 
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
