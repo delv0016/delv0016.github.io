@@ -36,6 +36,7 @@ body {
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     color: black;
 }
 
@@ -73,5 +74,26 @@ padding: 20px 20px 20px 10px;
 width: auto;
 height: auto;
 margin: 10px 15px 50px 15px;
+}
 
+input[type]:not([type=radio]){
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(143, 136, 136)
+}
+#message{
+    height: 300px;
+}
+.radio-container{
+    width: 100%;
+}
+p{
+    font-size: 20px;
+}
+button[type=submit] {
+    margin-top: 2rem;
+    background-color: rgb(217, 232, 231);
+    padding: 10px 20px;
+    text-transform: uppercase;
 }

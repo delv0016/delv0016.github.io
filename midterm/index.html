@@ -81,9 +81,10 @@
                         <input id="email" type="email" name="email">
 
                         <label for="message">Your Message</label>
-                        <input id="message" name="message">
+                        <input id="message" name="message" type="text">
 
-                        <h5>Would you like to visit the Black Cat?</h5>
+                        <p>Would you like to visit the Black Cat?</p>
+                        <div class="radio-container">
                         <label for="Yes">Yes</label>
                         <input type="radio" id="Yes" name="visit" value="Yes">
 
@@ -92,11 +93,13 @@
 
                         <label for="Maybe">Maybe</label>
                         <input type="radio" id="Maybe" name="visit" value="maybe">
+                    </div>
+                        
                         <button type="submit">Send</button>
                 </form>
             </article>
         </main>
-        <footer>
+        <footer class="copyright">
             <p>Copyright &copy; 2023 Black Cat</p>
         </footer>
     </div>
