@@ -12,7 +12,10 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1 class="site-title">Sleepy Black Cat</h1>
+            <div class="header-wrapper">
+                <img src="images/raw0019.jpeg" alt="blackcat" width="1024" , heigt="341">
+                <h1 class="site-title">Sleepy Black Cat</h1>
+            </div>
             <nav class="my-navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,17 +47,43 @@
             <article>
                 <h3>Facts About Black Cats</h3>
                 <ul>
-                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
-                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
-                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
-                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                    <li>Carefully drink from water glass and then spill it everywhere. </li>
+                    <li>Gimme attention gimme attention gimme attention gimme attention gimme attention.</li>
+                    <li>Meow meow sleep in the bathroom sink purrr purr littel cat. </li>
+                    <li>Have secret plans.</li>
                 </ul>
             </article>
             <article>
                 <h3>Contact to learn more</h3>
+                <form action="learnmore.html" method="post">
+                    <fieldset>
+                        <label for="fullname">Your Name</label>
+                        <input id="fullname" type="text" name="fullname">
 
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" name="email">
+
+                        <label for="message">Your Message</label>
+                        <input id="message" name="message">
+
+                        <h5>Would you like to visit the Black Cat?</h5>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="visit" value="Yes">
+
+                        <label for="No">No</label>
+                        <input type="radio" id="No" name="visit" value="No">
+
+                        <label for="Maybe">Maybe</label>
+                        <input type="radio" id="Maybe" name="visit" value="maybe">
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
+                </fieldset>
             </article>
         </main>
+        <footer>
+            <p>Copyright &copy; 2023 Black Cat</p>
+        </footer>
     </div>
 </body>
 
