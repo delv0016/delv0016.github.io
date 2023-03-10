@@ -36,16 +36,15 @@ body {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
-    color: black;
 }
 
 a:visited {
-    text-decoration: unset
+    text-decoration: unset;
 }
 
 a:link {
-    text-decoration: unset
+    text-decoration: unset;
+    color: black;
 }
 
 .my-navigation li:last-child {
