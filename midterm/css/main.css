@@ -33,11 +33,19 @@ body {
     height: 50px;
     border-right-style: solid;
     border-color: black;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+}
+
+a:visited {
+    text-decoration: unset
+}
+
+a:link {
+    text-decoration: unset
 }
 
 .my-navigation li:last-child {
@@ -68,32 +76,39 @@ h3 {
 }
 
 /*Contact form*/
-.contact-form{
-border: 1px solid black;
-padding: 20px 20px 20px 10px;
-width: auto;
-height: auto;
-margin: 10px 15px 50px 15px;
+.contact-form {
+    border: 1px solid black;
+    padding: 20px 20px 20px 10px;
+    width: auto;
+    height: auto;
+    margin: 10px 15px 50px 15px;
 }
 
-input[type]:not([type=radio]){
+input[type]:not([type=radio]) {
     width: 100%;
     margin-top: 5px;
     margin-bottom: 20px;
     border: 1px solid rgb(143, 136, 136)
 }
-#message{
+
+#message {
     height: 300px;
 }
-.radio-container{
+
+.radio-container {
     width: 100%;
 }
-p{
-    font-size: 20px;
-}
+
 button[type=submit] {
     margin-top: 2rem;
     background-color: rgb(217, 232, 231);
     padding: 10px 20px;
     text-transform: uppercase;
+}
+
+/*footer style*/
+footer {
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
