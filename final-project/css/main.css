@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+/*Service style: grid template, button flex, text style*/
+.services {
+    display: grid;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 20px 20px 10px 20px;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+}
+
+p {
+    margin: 20px 20px 5px 20px;
+}
+
+h3 {
+    margin: 20px 20px 10px 20px;
+    font-size: 1.5rem;
+}
+
+.button {
+    display: flex;
+    max-width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    padding: 32px 16px;
+    margin: 20px 16px;
+    background-color: black;
+    border: none;
+    font-size: 24px;
+    color: white
+}
+
+.orange {
+    background-color: #c78c06;
+    color: black;
+}
+
+/*vision*/
+
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vision h3 {
+    padding-top: 20px;
+    color: white;
+}
+
+.vision p {
+    color: white;
+}
+
+.team {
+    display: grid;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+}
+
+.team-content h4 {
+    margin: 0px 20px 10px 20px;
+    border-bottom: 2px solid #c78c06;
+}
+
+.team p{
+    margin: 0px 20px 20px 20px; 
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 10px 20px;
+
+}
+
+.contact-form label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button{
+    background-color: black;
+    color: #c78c06;
+    width: 20%; 
+    margin-top: 20px;
+}
+
+.contact-form h2{
+    margin-top: 50px;
+}
+
+.operation table, th, td{
+    border: solid 1px black;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.operation table{
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    background-color: #ffe6ac;
+    height: 70px;
+}
+
+td {
+    padding-left: 10px;
+    height: 70px;
+}
+
+th:nth-child(1) {
+    width: 70%;
+}
+
+th:nth-child(2) {
+    width: 30%;
+}
+
+.location iframe {
+margin: 10px 20px 20px 20px;
+}
+
+footer {
+    background-color: black;
+    color: #c78c06;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
