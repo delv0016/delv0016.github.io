@@ -14,12 +14,16 @@
 </head>
 
 <body>
-    <!--Header: logo, nav panel with list item and search form-->
+
+    <div class="wrapper">
+           <!--Header: logo, nav panel with list item and search form-->
     <div class="wrapper-nav">
-        <header class="nav">
-            <img src="images/logo.png" alt="image logo">
+        <header class="header-nav">
+            <div class="header-img">
+                <img src="images/logo.png" alt="image logo">
+            </div>
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="home">Home</a></li>
                     <li><a href="about-us">About us</a></li>
                     <li><a href="services">Services</a></li>
@@ -28,7 +32,9 @@
                 </ul>
             </nav>
             <form action="search.html" method="get">
-                <label for="search"></label><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <div class="search-icon">
+                    <label for="search"></label><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
                 <input id="search" type="text" name="search" placeholder="Search">
             </form>
         </header>
@@ -36,17 +42,19 @@
 
     <!--Main banner: img background, h1, paragraph and button. No wrapper-->
     <div class="main-banner">
-        <img src="images/main-banner.jpg" alt="image banner">
+        <div class="text-block">
         <h1>Welcome to Three Star Media</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis asperiores voluptatum, sunt illo commodi
             cupiditate dolorem, quos voluptate maxime fugit, doloremque rem minus nostrum porro odit necessitatibus
             nihil. Molestias, amet!</p>
         <a class="button orange" href="connect"><p>Connect with us</p><i class="fa-sharp fa-solid fa-play"></i></a>
     </div>
+    </div>
 
     <!--About us: h2 title, img and float paragraph using flex-->
     <div class="about-us">
         <img src="images/about-us.jpg" alt="about us">
+        <div class="about-us-content">
         <h2>About us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam repudiandae cum temporibus vero
             aliquam odio doloribus nihil, repellendus quo nisi distinctio perferendis porro maxime consequatur! Nulla,
@@ -54,95 +62,105 @@
         <p>Quia natus unde sequi aliquam eum voluptate, autem ipsam perferendis libero! Blanditiis quam consequuntur
             animi nemo esse. Voluptatem reiciendis sit accusamus saepe incidunt molestiae alias veritatis facere enim?
             Iusto, corrupti.</p>
+        </div>
     </div>
 
     <!--Services: h2 title, h3 services, add img and paragraphs-->
-    <div class="services">
+    <div class="services-wrapper">
         <h2>Our services</h2>
-        <div class="services-content">
-            <img src="images/digital.jpg" alt="dgt image">
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
-                quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
-                amet
-                animi ab repellendus.</p>
-            <a class="button" href="dgt-plans"><p>Digital Plans</p><i class="fa-sharp fa-solid fa-play"></i></a>
-        </div>
+        <div class="services">
+            <div class="services-content first">
+                <img src="images/digital.jpg" alt="dgt image">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
+                    quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
+                    amet
+                    animi ab repellendus.</p>
+                <a class="button" href="dgt-plans">Digital Plans<i class="fa-sharp fa-solid fa-play"></i></a>
+            </div>
 
-        <div class="services-content">
-            <img src="images/marketing.jpg" alt="mkt image">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
-                quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
-                amet
-                animi ab repellendus.</p>
-            <a class="button" href="mkt-plans"><p>Marketing Plans</p><i class="fa-sharp fa-solid fa-play"></i></a>
-        </div>
+            <div class="services-content second">
+                <img src="images/marketing.jpg" alt="mkt image">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
+                    quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
+                    amet
+                    animi ab repellendus.</p>
+                <a class="button" href="mkt-plans">Marketing Plans<i class="fa-sharp fa-solid fa-play"></i></a>
+            </div>
 
-        <div class="services-content">
-            <img src="images/video.jpg" alt="vid image">
-            <h3>Video Production</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
-                quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
-                amet
-                animi ab repellendus.</p>
-            <a class="button" href="vid-plans"><p>Video Plans</p><i class="fa-sharp fa-solid fa-play"></i></a>
-        </div>
+            <div class="services-content third">
+                <img src="images/video.jpg" alt="vid image">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
+                    quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
+                    amet
+                    animi ab repellendus.</p>
+                <a class="button" href="vid-plans">Video Plans<i class="fa-sharp fa-solid fa-play"></i></a>
+            </div>
 
-        <div class="services-content">
-            <img src="images/web.jpg" alt="web image">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
-                quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
-                amet
-                animi ab repellendus.</p>
-            <a class="button" href="web-plans"><p>Web Plans</p><i class="fa-sharp fa-solid fa-play"></i></a>
-        </div>
+            <div class="services-content fourth">
+                <img src="images/web.jpg" alt="web image">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
+                    quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
+                    amet
+                    animi ab repellendus.</p>
+                <a class="button" href="web-plans">Web Plans<i class="fa-sharp fa-solid fa-play"></i></a>
+            </div>
 
-        <div class="services-content">
-            <img src="images/print.jpg" alt="print image">
-            <h3>Print</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
-                quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
-                amet
-                animi ab repellendus.</p>
-            <a class="button" href="print-plans"><p>Print Plans</p><i class="fa-sharp fa-solid fa-play"></i></a>
+            <div class="services-content fifth">
+                <img src="images/print.jpg" alt="print image">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum enim, voluptatum recusandae
+                    quibusdam excepturi adipisci illum quas consectetur aperiam eaque libero ullam facere consequatur est
+                    amet
+                    animi ab repellendus.</p>
+                <a class="button" href="print-plans">Print Plans<i class="fa-sharp fa-solid fa-play"></i></a>
+            </div>
         </div>
     </div>
 
     <!--Vision: add img for background, h3 for title, paragraph and button-->
     <div class="vision">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi quo, recusandae rem at distinctio
-            magni officiis. Eius illo culpa voluptatibus praesentium voluptatum, repudiandae dolorem. Tempore ipsam
-            eveniet corrupti minima?</p>
-        <a class="learn button" href="learn"><p>Learn More</p><i class="fa-sharp fa-solid fa-play"></i></a>
+        <div class="vision-content">
+            <h3>Our Vision</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi quo, recusandae rem at distinctio
+                magni officiis.</p>
+            <a class="learn button" href="learn"><p>Learn More</p><i class="fa-sharp fa-solid fa-play"></i></a>
+        </div>
     </div>
 
     <!--Our team: h2 for title, two img and two h3 with paragraph-->
+    <div class="team-title">
     <h2>Our Team</h2>
+    </div>
     <div class="team">
-       <div class="team-content">
-        <img src="images/john.jpg" alt="CEO photo">
+        <img src="images/john.jpg" alt="CEO photo" class="imgceo">
+        <div class="team-content ceo">
         <h3>John Doe</h3>
         <h4>CEO and Co-owner</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nobis mollitia ipsam? Quod laboriosam
             quia minima animi, iste architecto harum nesciunt a culpa dolorem consequatur omnis. Vel nisi explicabo
             nulla?</p>
         </div>
+        <img src="images/bob.jpg" alt="CFO photo" class="imgcfo">
+        <div class="team-content cfo">
+            <h3>Bob Rite</h3>
+            <h4>CFO and Co-owner</h4>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur voluptate at minima fugiat omnis
+                velit in ducimus laudantium temporibus libero atque accusamus, amet qui alias obcaecati saepe rem rerum.
+            </p>
 
-        <div class="team-content">
-        <img src="images/bob.jpg" alt="CFO photo">
-        <h3>Bob Rite</h3>
-        <h4>CFO and Co-owner</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur voluptate at minima fugiat omnis
-            velit in ducimus laudantium temporibus libero atque accusamus, amet qui alias obcaecati saepe rem rerum.</p>
-        </div>
-        </div>
+    </div>
+    </div>
     <!--Contact: create div for form and submit button, and other div for location with embedded map-->
+    <div class="contact-title">
+    <h2>Contact Us</h2>
+</div>
     <div class="contact">
         <div class="contact-form">
-            <h2>Contact Us</h2>
             <h3>Send us a message</h3>
             <form action="contact.html" method="post">
                 <label for="fullname">Full Name</label>
@@ -157,43 +175,57 @@
                 <button type="submit" value="submit">Send</button>
             </form>
         </div>
+        <div class="location">
+            <h3>Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0383072876843!2d-75.76179544888896!3d45.34803897899713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718c573d6f9%3A0x976bda19394c31bc!2zQWxnb25xdWlu4oCZcw!5e0!3m2!1sen!2sca!4v1680814218011!5m2!1sen!2sca"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="operation-wrapper">
+            <div class="operation-title">
+                <h3>Hours of operation</h3>
+            </div>
+            <div class="operation">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
 
         <!--Table: create 3 rows and 2 columns table-->
-        <div class="operation">
-            <h3>Hours of operation</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
     </div>
 
-    <div class="location">
-        <h3>Location</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0383072876843!2d-75.76179544888896!3d45.34803897899713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718c573d6f9%3A0x976bda19394c31bc!2zQWxnb25xdWlu4oCZcw!5e0!3m2!1sen!2sca!4v1680814218011!5m2!1sen!2sca"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+
 
     <footer>
+        <div class="copyright">
         &#169; Copyright Three Star Media, 2020
         <p>All images are taken from <a href="unsplash">Unsplash</a></p>
+        </div>
     </footer>
+    </div>
+    
 </body>
 
 </html>
