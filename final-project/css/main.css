@@ -48,28 +48,14 @@ table {
 }
 /* End reset */
 
+/* Mobile approach style*/
+
+/*General style for mobile*/
 html , body {
     width: calc(100vw - 1rem);
     max-width: 100%;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
-}
-.header-nav {
-    background-color: black;
-}
-
-.header-nav {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.header-img{
-    background-color: #c78c06;
-    width: 100%;
-    display: flex;
 }
 
 .wrapper {
@@ -95,6 +81,25 @@ h2 {
     border: none;
     font-size: 24px;
     color: white
+}
+
+/* Navigation: flex, column, center, background black/orange*/
+.header-nav {
+    background-color: black;
+}
+
+.header-nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-img{
+    background-color: #c78c06;
+    width: 100%;
+    display: flex;
 }
 
 .wrapper-nav {
@@ -125,6 +130,8 @@ h2 {
     align-items: center;
     height: 100%;
 }
+
+/* Nav list, first child different*/
 .nav-list li{
     text-align: center;
     width: 100%;
@@ -142,6 +149,7 @@ h2 {
     background-color: #c78c06;
 }
 
+/*Form style in nav*/
 .header-nav form {
     display: flex;
     background-color: black;
@@ -168,6 +176,8 @@ h2 {
     color: #c78c06;
     margin: 5px
 }
+
+/*Main Banner: background img, textblock with opacity, orange button*/
 
 .main-banner {
     display: flex;
@@ -200,6 +210,8 @@ h2 {
     padding-bottom: 40px;
 }
 
+/*About us: flex, column, background colour, margin and padding following the main banner's width*/
+
 .about-us {
     display: flex;
     flex-direction: column;
@@ -222,6 +234,8 @@ h2 {
 .about-us img {
     padding: 10px 10px 10px 20px;
     }
+
+/* Services: flex, column, gap between services, flex column in service-content */
 
 .services {
     display: flex;
@@ -256,6 +270,8 @@ h2 {
 .services-content .fa-solid{
     margin-left: 10px;
 }
+
+/*Vision: background img, content different colour, button with opacity*/
 .vision {
     background-image: url("../images/vision.jpg");
     background-color: red;
@@ -288,6 +304,7 @@ h2 {
     max-width: 250px;
 }
 
+/*Team: flex, column, style h3, h4 and p*/
 .team {
     display: flex;
     flex-direction: column;
@@ -318,13 +335,14 @@ h2 {
     margin: 0px 20px 20px 20px; 
 }
 
-
+/*Contact: flex, colum, same width for form, location and operation*/
 .contact {
     display: flex;
     flex-direction: column;
     margin: 0px 20px;
 }
 
+/*Styling form*/
 .contact-form form{
     display: flex;
     flex-direction: column;
@@ -354,9 +372,12 @@ textarea {
     height: 150px;
 }
 
+/*Styling location*/
 .location iframe {
 margin: 10px 20px 20px 0px;
 }
+
+/*Styling table*/
 .operation-title {
     font-size: 35px;
     font-weight: bold;
@@ -382,7 +403,7 @@ td {
     padding-left: 10px;
     height: 70px;
 }
-
+/*Footer: background colour black, orange text, change colour of link*/
 footer {
     background-color: black;
     color: #c78c06;
@@ -391,17 +412,21 @@ footer {
 }
 
 .copyright {
-padding-left: 100px;
-text-align: left;
+padding-left: 20px;
 }
 
+.copyright a:link {
+    color: #c78c06;
+}
+
+/* Style for min-width 760px and above*/
 @media screen and (min-width: 760px) {
     body {
         max-width: 1200px;
         align-content: center;
         margin: auto;
     }
-
+/*Nav: flex row, padding in logo, nav list center */
     .wrapper-nav {
         background-color: black;
         display: flex;
@@ -455,11 +480,13 @@ text-align: left;
         text-decoration: none;
         text-align: center;
     }
-
+/*Main banner: Textblock without left/right margin*/ 
     .text-block {
         margin: 0 100px;
         padding: 50px 20px 20px 30px;
     }
+
+    /*About us: elements in flex-row, content in flex-column*/
 
     .about-us {
         display: flex;
@@ -477,7 +504,7 @@ text-align: left;
         justify-content: center;
         align-items: flex-start;
     }
-
+/*Services: grid, determine area, button different width*/
     .services-wrapper {
         margin: 0 80px;
     }
@@ -519,7 +546,7 @@ text-align: left;
     .fifth {
         grid-area: fifth;
     }
-
+/*Vision: margin content following the main banner's width*/
     .vision {
         margin-top: 30px;
     }
@@ -527,7 +554,7 @@ text-align: left;
     .vision-content {
         margin: 0px 100px;
     }
-
+/*Team: grid, determine areas*/
     .team-title {
         margin: 0 100px;
     }
@@ -558,7 +585,7 @@ text-align: left;
         grid-area: imgcfo;
         width: 100%;
     }
-
+/*Contact: grid, determine area, match the margin witdh*/
     .contact-title {
         margin: 0 100px;
     }
@@ -575,5 +602,9 @@ text-align: left;
     .operation-wrapper{
         width: 200%;
     }
+    .copyright {
+        padding-left: 120px;
+
+}
 
 }
